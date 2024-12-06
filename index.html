@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap');
+        * {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+    </style>
+</head>
+    <body>
+        <nav>
+            <p>Novo modelo de Central Elétrica chega ao Brasil em 2024.</p>
+        </nav>
+       
+        <img width="300px" style="margin: 0 auto; display: flex; padding-top: 50px;" src="download1.png" alt="">
+        
+        <div style="padding-top: 0px; text-align: center;">
+            <p style="font-weight: bold; font-size: 22px; padding: 0px 8px;">A única central elétrica capaz de manter sua casa de forma 100% sustentável!</p>
+            <img style="max-width: 600px;" width="100%" src="https://static.vecteezy.com/ti/vetor-gratis/p1/7815453-ilustracaoial-de-conceito-de-desenvolvimento-sustentavel-e-ecologicamente-correto-vetor.jpg" alt="">
+        </div>
+        
+        
+        <p style="text-align: center; font-size: 22px;">Como funciona?</p>
+
+        <div class="video-container">
+            <video id="myVideo" width="640" controls>
+                <source src="vsl.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            
+            <div class="buttons">
+                <button class="button" id="playPauseButton">Play</button>
+                <button class="button" id="muteButton">Mute</button>
+            </div>
+        </div>
+
+        <script>
+            // Obter os elementos
+            const video = document.getElementById("myVideo");
+            const playPauseButton = document.getElementById("playPauseButton");
+            const muteButton = document.getElementById("muteButton");
+        
+            // Função para alternar o play/pause
+            playPauseButton.addEventListener("click", () => {
+                if (video.paused) {
+                    video.play();
+                    playPauseButton.textContent = "Pause";
+                } else {
+                    video.pause();
+                    playPauseButton.textContent = "Play";
+                }
+            });
+        
+            // Função para alternar o mute/desmute
+            muteButton.addEventListener("click", () => {
+                if (video.muted) {
+                    video.muted = false;
+                    muteButton.textContent = "Mute";
+                } else {
+                    video.muted = true;
+                    muteButton.textContent = "Unmute";
+                }
+            });
+        </script>
+
+
+        <h1 style="padding: 0px 10px; color: green; font-weight: bold; font-size: 22px; text-align: center;">Quais as vantagens?</h1>
+
+        <div style="background-color: black; text-align: center; color: white; width: 90%; margin: 20px auto; max-width: 600px; padding: 20px 7px; border-radius: 7px;">
+            <h2>Economia</h2>
+            <p>Ao gerar sua própria energia com a central, você diminui a dependência da rede elétrica e reduz significativamente a fatura mensal da sua conta de luz, aproveitando fontes renováveis e sustentáveis. Com cerca de 60 dias, o investimento inicial se paga, proporcionando economia contínua.
+            </p>
+        </div>
+
+        <div style="background-color: black; text-align: center; color: white; width: 90%; margin: 20px auto; max-width: 600px; padding: 20px 7px; border-radius: 7px;">
+            <h2>Multifuncional</h2>
+            <p>Uma central elétrica pode ser extremamente útil em diversas situações. Ela pode sustentar uma casa, reduzindo os gastos com eletricidade. Em sítios e áreas rurais, pode garantir energia para atividades diárias, sem depender da rede elétrica. Em acampamentos, oferece autonomia para iluminar e carregar dispositivos essenciais. Além disso, é útil em situações de emergência, como falta de energia, oferecendo uma fonte confiável para manter a casa funcionando. Investir em uma central elétrica é garantir mais segurança e comodidade em diferentes momentos do seu dia a dia.
+
+            </p>
+        </div>
+
+        <div style="background-color: black; text-align: center; color: white; width: 90%; margin: 20px auto; max-width: 600px; padding: 20px 7px; border-radius: 7px;">
+            <h2>Portabilidade</h2>
+            <p>A central elétrica portátil oferece a vantagem de ser compacta e fácil de transportar, permitindo que você a leve para qualquer lugar, seja em viagens, acampamentos ou até em situações de emergência em locais remotos, garantindo energia onde quer que você esteja.
+            </p>
+        </div>
+
+        <div style="background-color: black; text-align: center; color: white; width: 90%; margin: 20px auto; max-width: 600px; padding: 20px 7px; border-radius: 7px;">
+            <h2>Custo Benefício</h2>
+            <p>As centrais elétricas são uma opção mais acessível do que os geradores tradicionais, pois eliminam custos extras como combustível e manutenção frequente. Baseadas em fontes renováveis, como energia solar, elas oferecem uma solução econômica e sustentável a longo prazo. Com um investimento inicial mais baixo e fácil operação, as centrais elétricas proporcionam economia e independência energética, sendo uma escolha vantajosa e acessível para muitas famílias brasileiras.
+            </p>
+        </div>
+        <h1 style="text-align: center; margin-top: 30px;">FRETE GRÁTIS HOJE.</h1>
+        <p style="text-align: center; margin-bottom: 30px;">Entregamos para todo Brasil. Máquinas a pronta entrega.</p>
+        <div class="vitrine" id="vitrine1">
+            <div class="imagem-principal">
+                <img id="imagem-principal" src="1.png" alt="Imagem Principal">
+            </div>
+            <div class="imagens-secundarias">
+                <img src="1.png" alt="Imagem a" onclick="trocarImagem(this)">
+                <img src="2.png" alt="Imagem 2" onclick="trocarImagem(this)">
+                <img src="5.png" alt="Imagem 3" onclick="trocarImagem(this)">
+                <img src="6.png" alt="Imagem 4" onclick="trocarImagem(this)">
+                <img src="7.png" alt="Imagem 5" onclick="trocarImagem(this)">
+                <img src="8.png" alt="Imagem 5" onclick="trocarImagem(this)">
+                <img src="9.png" alt="Imagem 5" onclick="trocarImagem(this)">
+            </div>
+        </div>
+        
+        <div class="vitrine2" id="vitrine2" style="display: none;">
+            <div class="imagem-principal">
+                <img id="imagem-principal" src="3.png" alt="Imagem Principal">
+            </div>
+            <div class="imagens-secundarias">
+                <img src="3.png" alt="Imagem a" onclick="trocarImagem(this)">
+                <img src="4.png" alt="Imagem 2" onclick="trocarImagem(this)">
+                <img src="5.png" alt="Imagem 3" onclick="trocarImagem(this)">
+                <img src="6.png" alt="Imagem 4" onclick="trocarImagem(this)">
+                <img src="7.png" alt="Imagem 5" onclick="trocarImagem(this)">
+                <img src="8.png" alt="Imagem 5" onclick="trocarImagem(this)">
+                <img src="9.png" alt="Imagem 5" onclick="trocarImagem(this)">
+            </div>
+        </div>
+        
+        
+       
+        <div style="width: 90%; margin: 10px auto; max-width: 700px; display: flex; gap: 10px;">
+            <p style="font-size: 19px;">Agora escolha autonomia:</p>
+        </div>    
+        <div style="width: 90%; margin: 0 auto; max-width: 700px; display: flex; gap: 10px;">
+            
+            <button class="toggle-button" onclick="toggleDiv('content1')">AC250 MAX Central Elétrica + Placa Solar</button>
+            <button class="toggle-button" onclick="toggleDiv('content2')">AC250 MAX Central Elétrica Expansível + Placa Solar + Bateria (3x mais autonomia)</button>
+            
+        </div>
+        <div id="content1" class="hidden-content">
+            <p style="font-size: 20px;"><span style="text-decoration: line-through;">R$1,259,92</span> 70% <b>OFF</b></p>
+            <p style="color: #c90076; font-size: 23px;">12x de <span style="font-size: 30px; font-weight: bold;">R$ 59,91</span></p>
+            <p>ou <b>R$ 397,00 à vista no PIX</b></p>
+            <br>
+
+            <p style="font-size: 22px;"><b>Potência:</b> 2.500 W 2.448 Wh</p>
+            <a href=""><span style="font-size: 22px;">COMPRAR AGORA</span> Últimas horas de Black Friday</a>
+        </div>
+        
+        <div id="content2" class="hidden-content">
+            <p style="font-size: 20px;"><span style="text-decoration: line-through;">R$1,659,92</span> 70% <b>OFF</b></p>
+            <p style="color: #c90076; font-size: 23px;">12x de <span style="font-size: 30px; font-weight: bold;">R$ 63,23</span></p>
+            <p>ou <b>R$ 497,00 à vista no PIX</b></p>
+            <br>
+
+            <p style="font-size: 21px;"><b>Potência:</b> 2.200 W 7344Wh</p>
+            <a href=""><span style="font-size: 22px;">COMPRAR AGORA</span> Últimas horas de Black Friday</a>
+        </div>
+
+        <div style="width: 90%; margin: 0 auto; max-width: 700px;">
+            <h2>Vantagens</h2>
+            <li>Economia de Energia</li>
+            <li>Segurança em emergências</li>
+            <li>Facilidade de montagem (como no vídeo)</li>
+            <li>Manutenção com baixo custo (1 vez anualmente)</li>
+            <li>Versátil para diversas ocasiões</li>
+            <li>Portátil para uso em vários locais</li>
+        </div>
+
+        <div style="background-color: rgb(36, 36, 36); color: white; padding: 50px 0px; margin: 20px 0px;">
+            <img width="300px" style="margin: 0 auto; display: flex;" src="gara.png" alt="">
+            <h2 style="text-align: center;">Satisfação e Segurança Garantidas!</h2>
+            <p style="text-align: center;">Nosso compromisso é com a sua satisfação! Oferecemos 3 anos de garantia para reparo do aparelho.</p>
+        </div>
+       
+        
+        <p style="font-size: 22px; text-align: center; margin-top: 25px;">Perguntas Frequentes:</p>
+        <div class="item" onclick="toggleSubDiv('subdiv1')">
+            <p>Quais são as medidas do aparelho?</p>
+        </div>
+        <div id="subdiv1" class="subdiv hidden">
+            <p>Altura: 38,1 cm - Largura: 27,94 cm - Comprimento:40,64 cm - Peso: 28kg</p>
+        </div>
+    
+        <div class="item" onclick="toggleSubDiv('subdiv2')">
+            <p>Qual a voltagem disponível?</p>
+        </div>
+        <div id="subdiv2" class="subdiv hidden">
+            <p>A AC250MAX é um aparelho bivolt, funciona tanto em 110v como em 220v</p>
+        </div>
+    
+        <div class="item" onclick="toggleSubDiv('subdiv3')">
+            <p>Qual o prazo de entrega?</p>
+        </div>
+        <div id="subdiv3" class="subdiv hidden">
+            <p>Todas as unidades que temos em estoque são de entrega rápida. Prazo máximo de 7 dias úteis (Aparelho a pronta entrega, já em estoque)</p>
+        </div>
+
+        <div class="item" onclick="toggleSubDiv('subdiv4')">
+            <p>Tem controle remoto?</p>
+        </div>
+        <div id="subdiv4" class="subdiv hidden">
+            <p>Sim, além do controle remoto disponibilizamos um aplicativo para IOS e Android, ou seja, você irá controlar sua central elétrica pela tela do seu celular com poucos cliques.</p>
+        </div>
+
+        <h2 style="text-align: center; margin-top: 50px;">QUEM SOMOS?</h2>
+
+        
+        <img width="90%" style="margin: 0 auto; display: flex; max-width: 600px;" src="https://climatizebrasil.online/wp-content/uploads/2024/11/visao-aerea-fabrica-campo-1024x614.jpg" alt="">
+        <p style="width: 90%; margin: 10px auto;">Pioneira no segmento, a SolarFlex Brasil está entre as maiores empresas Brasileiras do Mercado de soluções de energia renovável, presente no mercado a mais de 30 anos, a nossa história reflete os desafios superados em 3 décadas de grandes conquistas.</p>
+        <p style="width: 90%; margin: 0 auto;"><b>Avenida Três Corações, 1590 – Jardim das Palmeiras, Guarulhos – SP, 07012-325</b></p>
+        
+        
+        <div style="background-color: rgb(91, 91, 91); margin-top: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <img width="300px" src="Screenshot_2.png" alt="">
+            <img width="380px" src="Screenshot_3.png" alt="">
+        </div>
+
+        <footer>
+            <p>2024 </p>
+            <p>Todos os direitos reservados</p>
+        </footer>
+
+        <script>
+            function trocarImagem(elemento) {
+                var imagemPrincipal = document.getElementById('imagem-principal');
+                imagemPrincipal.src = elemento.src;
+            }
+        
+            let currentVisibleDiv = null;  // Variável para rastrear qual div está visível
+        
+            function toggleDiv(id) {
+                const contentDiv = document.getElementById(id);
+                const vitrine1 = document.getElementById('vitrine1');
+                const vitrine2 = document.getElementById('vitrine2');
+        
+                // Se a div clicada for a mesma que já está visível, não fazer nada
+                if (currentVisibleDiv === contentDiv) {
+                    return;
+                }
+        
+                // Ocultar a div de conteúdo que estava visível
+                if (currentVisibleDiv) {
+                    currentVisibleDiv.style.display = "none";
+                }
+        
+                // Exibir a nova div de conteúdo
+                contentDiv.style.display = "block";
+        
+                // Atualizar a variável para referir a div visível
+                currentVisibleDiv = contentDiv;
+        
+                // Alterar a vitrine com base no botão clicado
+                if (id === "content1") {
+                    vitrine1.style.display = "block";
+                    vitrine2.style.display = "none";
+                } else if (id === "content2") {
+                    vitrine1.style.display = "none";
+                    vitrine2.style.display = "block";
+                }
+            }
+        
+            // Inicializar com a vitrine 1 visível
+            window.onload = function() {
+                document.getElementById('content1').style.display = 'block';  // Exibir a div padrão
+                document.getElementById('vitrine1').style.display = 'block';  // Exibir a vitrine padrão
+            };
+
+            function toggleSubDiv(subdivId) {
+            const subDiv = document.getElementById(subdivId);
+            
+            // Verifica se a div está visível ou oculta
+            if (subDiv.style.display === "block") {
+                subDiv.style.display = "none";
+            } else {
+                subDiv.style.display = "block";
+            }
+        }
+        </script>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

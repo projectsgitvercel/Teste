@@ -1,0 +1,194 @@
+nav {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 55px;
+    position: fixed;
+    padding: 30px 7px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+.vitrine, .vitrine2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.imagem-principal {
+    max-width: 480px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.imagem-principal img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imagens-secundarias {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  
+}
+
+.imagens-secundarias img {
+    width: 18%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.toggle-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    margin: 5px 0px;
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.toggle-button:hover {
+    background-color: #218838;
+}
+
+.hidden-content {
+    display: none;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.hidden-content p {
+    margin: 0;
+}
+
+#content1, #content2 {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: white;
+    border: none;
+    text-align: left;
+    width: 95%;
+    max-width: 700px;
+    flex-direction: column;
+    
+}
+
+#content1 a , #content2 a {
+    text-decoration: none;
+    background-color: rgb(56, 118, 29);
+    color: white;
+    width: 95%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px auto;
+    border-radius: 15px;
+    line-height: 18px;
+    flex-direction: column;
+    height: 60px;
+}
+
+#content2 {
+    display: none;
+}
+
+
+.item {
+    background-color: #464749;
+    color: white;
+    padding: 15px;
+   
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+    max-width:  600px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.item:hover {
+    background-color: #0056b3;
+}
+
+.subdiv {
+    padding: 15px;
+    color: white;
+    background-color: #3a3b3b;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ /* Estilo do contêiner do vídeo */
+ .video-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#myVideo {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Estilo dos botões */
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
